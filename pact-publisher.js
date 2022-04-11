@@ -4,7 +4,7 @@ const childProcess = require("child_process");
 
 const opts = {
   pactFilesOrDirs: [path.resolve(process.cwd(), "pacts/")],
-  pactBroker: "{YOUR_PACT_BROKER_URL",
+  pactBroker: "{YOUR_PACT_BROKER_URL}",
   pactBrokerToken: "{YOUR_PACT_BROKER_TOKEN}",
   consumerVersion: "1",
 };
