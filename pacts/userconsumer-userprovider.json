@@ -1,0 +1,46 @@
+{
+  "consumer": {
+    "name": "UserConsumer"
+  },
+  "provider": {
+    "name": "UserProvider"
+  },
+  "messages": [
+    {
+      "description": "new user",
+      "providerStates": [
+        {
+          "name": "new user",
+          "params": null
+        }
+      ],
+      "contents": {
+        "userName": "clarlesLeclerc",
+        "role": "subscriber"
+      },
+      "matchingRules": {
+        "body": {
+          "$.userName": {
+            "matchers": [
+              {
+                "match": "type"
+              }
+            ]
+          },
+          "$.role": {
+            "matchers": [
+              {
+                "match": "type"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  }
+}

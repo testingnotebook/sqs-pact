@@ -1,0 +1,21 @@
+{
+  "name": "sqs_pact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "provide:consume": "node ./index.js",
+    "pact:consumer": "jest test/consumer-pact.spec.js",
+    "pact:provider": "jest test/provider-pact.spec.js",
+    "pact:publish": "node ./pact-publish.js"
+  },
+  "keywords": [],
+  "author": "Aaron Williams",
+  "license": "ISC",
+  "dependencies": {
+    "@pact-foundation/pact": "^9.17.3",
+    "aws-sdk": "^2.1112.0",
+    "jest": "^27.5.1"
+  }
+}
